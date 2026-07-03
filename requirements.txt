@@ -1,0 +1,9 @@
+kurigram>=2.2.23
+pytgrypto
+motor
+pymongo
+python-dotenv
+cachetools
+apscheduler
+langdetect
+deep-translator
