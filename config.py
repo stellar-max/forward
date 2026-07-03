@@ -1,0 +1,17 @@
+from os import getenv
+from dotenv import load_dotenv
+load_dotenv()
+API_ID=int(getenv("API_ID","0"))
+API_HASH=getenv("API_HASH","")
+BOT_TOKEN=getenv("BOT_TOKEN","")
+MONGO_URL=getenv("MONGO_URL","mongodb://localhost:27017")
+DB_NAME=getenv("DB_NAME","swaggy_forwarder")
+OWNER_ID=int(getenv("OWNER_ID","0"))
+SUPPORT_ID=getenv("SUPPORT_ID","@BillaCore")
+PAYMENT_TEXT=getenv("PAYMENT_TEXT","UPI: tmkc@bank")
+SESSION_DIR=getenv("SESSION_DIR","sessions")
+DEFAULT_LANG=getenv("DEFAULT_LANG","en")
+CACHE_TTL=int(getenv("CACHE_TTL","120"))
+MAX_FREE_TASKS=int(getenv("MAX_FREE_TASKS","2"))
+MAX_FREE_RULES=int(getenv("MAX_FREE_RULES","25"))
+MAX_CLONE_LIMIT=int(getenv("MAX_CLONE_LIMIT","10000"))
